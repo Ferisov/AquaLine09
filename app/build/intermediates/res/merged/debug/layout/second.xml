@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:text="Описание"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonOpis2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <Button
+        android:text="Заказать"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonBy2"
+        android:textSize="18sp"
+        android:layout_above="@+id/buttonOpis2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="13dp"
+       />
+
+    <Button
+        android:text="+"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonAdd2"
+        android:layout_alignBaseline="@+id/buttonDel2"
+        android:layout_alignBottom="@+id/buttonDel2"
+        android:layout_toRightOf="@+id/textViewKol2"
+        android:layout_toEndOf="@+id/textViewKol2" />
+
+    <Button
+        android:text="-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonDel2"
+        android:layout_above="@+id/buttonBy2"
+        android:layout_toLeftOf="@+id/textViewKol2"
+        android:layout_toStartOf="@+id/textViewKol2"
+        />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewKol2"
+        android:layout_above="@+id/buttonDel2"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/textViewZaglavie2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/textViewLegenda"
+        android:textSize="30sp"
+        android:layout_below="@+id/textViewNomer2"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/legenda_gor"
+        android:id="@+id/imageLegendGor"
+        android:contentDescription="@string/textViewLegenda"
+        android:background="@drawable/legenda_gor"
+        android:layout_below="@+id/textViewZaglavie2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewStoim2"
+        android:textSize="18sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_below="@+id/imageLegendGor"
+        android:layout_toRightOf="@+id/textViewCena2"
+        android:layout_toEndOf="@+id/textViewCena2" />
+
+    <TextView
+        android:text="@string/PozvoniteNam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewPozvonNam2"
+        tools:ignore="UnknownId"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewNomer2"
+        tools:ignore="RtlHardcoded,UnknownId"
+        android:textSize="18sp"
+        android:text="111111"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textViewPozvonNam2"
+        android:layout_toEndOf="@+id/textViewPozvonNam2" />
+
+    <TextView
+        android:text="Цена"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewCena2"
+        android:textSize="18sp"
+        android:layout_below="@+id/imageLegendGor"
+        android:layout_alignLeft="@+id/textViewNomer2"
+        android:layout_alignStart="@+id/textViewNomer2"  />
+
+</RelativeLayout>

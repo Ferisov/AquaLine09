@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:text="Описание"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonOpis4"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <Button
+        android:text="Заказать"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonBy4"
+        android:textSize="18sp"
+        android:layout_above="@+id/buttonOpis4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="13dp"
+        />
+
+    <Button
+        android:text="+"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonAdd4"
+        android:layout_alignBaseline="@+id/buttonDel4"
+        android:layout_alignBottom="@+id/buttonDel4"
+        android:layout_toRightOf="@+id/textViewKol4"
+        android:layout_toEndOf="@+id/textViewKol4" />
+
+    <Button
+        android:text="-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonDel4"
+        android:layout_above="@+id/buttonBy4"
+        android:layout_toLeftOf="@+id/textViewKol4"
+        android:layout_toStartOf="@+id/textViewKol4"
+        />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewKol4"
+        android:layout_above="@+id/buttonDel4"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/textViewZaglavie4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Жемчужина Кавказа"
+        android:textSize="30sp"
+        android:layout_below="@+id/textViewNomer4"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewStoim4"
+        android:textSize="18sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_below="@+id/imageGemchugina"
+        android:layout_toRightOf="@+id/textViewCena4"
+        android:layout_toEndOf="@+id/textViewCena4" />
+
+    <TextView
+        android:text="@string/PozvoniteNam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewPozvonNam4"
+        tools:ignore="UnknownId"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewNomer4"
+        tools:ignore="RtlHardcoded,UnknownId"
+        android:textSize="18sp"
+        android:text="111111"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textViewPozvonNam4"
+        android:layout_toEndOf="@+id/textViewPozvonNam4" />
+
+    <TextView
+        android:text="Цена"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewCena4"
+        android:textSize="18sp"
+        android:layout_below="@+id/imageGemchugina"
+        android:layout_alignLeft="@+id/textViewNomer4"
+        android:layout_alignStart="@+id/textViewNomer4"  />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/gemchugina"
+        android:id="@+id/imageGemchugina"
+        android:contentDescription="Жемчужина Кавказа"
+        android:background="@drawable/gemchugina"
+        android:layout_below="@+id/textViewZaglavie4"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

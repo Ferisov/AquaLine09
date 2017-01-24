@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:text="@string/Opisanie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonOpis1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <Button
+        android:text="@string/buttonBy1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonBy1"
+        android:textSize="18sp"
+        android:layout_above="@+id/buttonOpis1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="13dp" />
+
+    <Button
+        android:text="@string/buttonAdd1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonAdd1"
+        android:layout_alignBaseline="@+id/buttonDel1"
+        android:layout_alignBottom="@+id/buttonDel1"
+        android:layout_toRightOf="@+id/textViewKol1"
+        android:layout_toEndOf="@+id/textViewKol1" />
+
+    <Button
+        android:text="@string/buttonDel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonDel1"
+        android:layout_above="@+id/buttonBy1"
+        android:layout_toLeftOf="@+id/textViewKol1"
+        android:layout_toStartOf="@+id/textViewKol1" />
+
+    <TextView
+        android:text="@string/textviewKol1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewKol1"
+        android:layout_above="@+id/buttonDel1"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewZaglavie1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/textViewElbrus"
+        android:textSize="30sp"
+        android:layout_below="@+id/textViewNomer1"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/elbrusinka_detskay"
+        android:id="@+id/imageElbrusDet"
+        android:contentDescription="@string/elbrusinka_detskay"
+        android:background="@drawable/elbrusinka_detskay"
+        android:layout_below="@+id/textViewZaglavie1"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewStoim1"
+        android:textSize="18sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_below="@+id/imageElbrusDet"
+        android:layout_toRightOf="@+id/textViewCena1"
+        android:layout_toEndOf="@+id/textViewCena1" />
+
+    <TextView
+        android:text="@string/PozvoniteNam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewPozvonNam1"
+        tools:ignore="UnknownId"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewNomer1"
+        tools:ignore="RtlHardcoded,UnknownId"
+        android:textSize="18sp"
+        android:text="111111"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textViewPozvonNam1"
+        android:layout_toEndOf="@+id/textViewPozvonNam1" />
+
+    <TextView
+        android:text="Цена"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewCena1"
+        android:textSize="18sp"
+        android:layout_below="@+id/imageElbrusDet"
+        android:layout_alignLeft="@+id/textViewNomer1"
+        android:layout_alignStart="@+id/textViewNomer1" />
+
+
+</RelativeLayout>

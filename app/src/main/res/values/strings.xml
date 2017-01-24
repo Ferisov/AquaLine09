@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">AquaLine09</string>
+    <string name="buttonAdd1">+</string>
+    <string name="buttonDel1">-</string>
+    <string name="textviewKol1">TextView</string>
+    <string name="buttonBy1">Заказать</string>
+    <string name="textViewElbrus">Эльбрусинка детская</string>
+    <string name="textViewLegenda">Легенда гор</string>
+    <string name="buttonTel">Добавить номер</string>
+    <string name="telefon">Телефон</string>
+    <string name="Opisanie">Описание</string>
+    <string name="PozvoniteNam">Позвоните нам:</string>
+    <string name="elbrusinka_detskay">elbrusinka_detskay</string>
+    <string name="Settings">Настройки</string>
+    <string name="IzmenNomer">Изменить номер</string>
+</resources>
